@@ -7,8 +7,9 @@ sources:
     attribtuion: Cartotile - test data   #add if needed
     minzoom: 0 #add if needed
     maxzoom: 2 #add if needed
-    tiles:
-    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
+    url: https://ubukawa.github.io/qgis-style/tilejson01.json
+#    tiles:
+#    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
 layers:
    - !!inc/file layers/background.yml
    # add any layer if needed

@@ -2,5 +2,11 @@
 testing styles for QGIS
 
 
+# tilejson
+* https://ubukawa.github.io/qgis-style/tilejson01.json
+
 # styles
-* https://ubukawa.github.io/qgis-style/style01.json
+* Example: https://ubukawa.github.io/qgis-style/style01.json
+  * style01: only background (index color)
+  * style02: only background (rgb color)
+  * style03:
