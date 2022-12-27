@@ -1,0 +1,21 @@
+#filter:
+id: ls-bndl
+minzoom: 0
+maxzoom: 5
+paint:
+#  line-color: '#000000'
+#  line-color: rgb(0,100,100)
+#  line-color: rgba(0,100,100,0.7)
+  line-color: blue
+  line-width: 1
+  #line-opacity: 0.5
+  #line-dasharray:  #match cannot be used for dasharray in MapLibre
+  #  - 5
+  #  - 4
+  #  - 3
+#layout:
+#  line-cap: round
+#  line-join: round
+source: carto
+source-layer: bndl 
+type: line

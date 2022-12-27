@@ -12,4 +12,5 @@ sources:
 #    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
 layers:
    - !!inc/file layers/background.yml
+   - !!inc/file layers/ls-bndl.yml
    # add any layer if needed

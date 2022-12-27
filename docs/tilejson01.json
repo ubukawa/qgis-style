@@ -1,10 +1,28 @@
 {
-    "tilejson": "2.2.0",
+    "tilejson": "3.0.0",
+    "name": "Cartotile - test data",
+    "attribution": "Cartotile - test data",
     "schema": "xyz",
     "tiles": ["https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf"],
-    "name": "Cartotile - test data",
     "maxzoom": 2,
     "minzoom": 0,
-    "attribution": "Cartotile - test data",
-    "bounds": [-180, -85, 180, 85]
+    "bounds": [-180, -85, 180, 85],
+    "vector_layers":[
+        {
+        "id": "bndl",
+        "fields":{
+            "bdytyp": "the type of line",
+            "objectid": "the id of the object"
+        },
+        "description": "line",
+        "maxzoom": 2,
+        "minzoom": 0
+        },
+        {
+        "id": "bnda",
+        "description": "polygon",
+        "maxzoom": 2,
+        "minzoom": 0
+        }
+    ]
 }
