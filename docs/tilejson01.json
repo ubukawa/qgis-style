@@ -1,0 +1,10 @@
+{
+    "tilejson": "2.2.0",
+    "schema": "xyz",
+    "tiles": ["https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf"],
+    "name": "Cartotile - test data",
+    "maxzoom": 2,
+    "minzoom": 0,
+    "attribution": "Cartotile - test data",
+    "bounds": [-180, -85, 180, 85]
+}
