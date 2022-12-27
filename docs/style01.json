@@ -1,0 +1,23 @@
+{
+  "version": 8,
+  "sources": {
+    "carto": {
+      "type": "vector",
+      "attribtuion": "Cartotile - test data",
+      "minzoom": 0,
+      "maxzoom": 2,
+      "tiles": [
+        "https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#D6EBF5"
+      }
+    }
+  ]
+}
