@@ -1,0 +1,35 @@
+{
+    "tilejson": "3.0.0",
+    "name": "UN_CLEARMAP_VT",
+    "attribution": "UN_CLEARMAP_VT",
+    "schema": "xyz",
+    "tiles": ["https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf"],
+    "maxzoom": 5,
+    "minzoom": 0,
+    "bounds": [-180, -85, 180, 85],
+    "vector_layers":[
+        {
+        "id": "Populated Places_SYMBOLS",
+        "description": "Capitals",
+        "fields":{
+            "_symbol": "the type of symbol"
+                 }
+        },
+        {
+        "id": "Coastline_L01-L04",
+        "description": "Coastline (ZL1-4)"
+        },
+        {
+        "id": "Coastline_L05-L06",
+        "description": "Coastline (ZL5-6)"
+        },
+        {
+        "id": "BNDA_L01-L04",
+        "description": "BNDA (ZL0-1)"
+        },
+        {
+        "id": "BNDA_L05-L06",
+        "description": "BNDA (ZL5-6)"
+        }
+    ]
+}

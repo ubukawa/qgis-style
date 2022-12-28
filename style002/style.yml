@@ -1,0 +1,16 @@
+version: 8
+sprite: https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S
+glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
+sources:
+  cme: #change the name if needed
+    type: vector
+    attribtuion: UN_CLEARMAP_VT(powered by esri)   #add if needed
+    minzoom: 0 #add if needed
+    maxzoom: 5 #add if needed
+    url: https://ubukawa.github.io/qgis-style/tilejson02.json
+#    tiles:
+#    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
+layers:
+   - !!inc/file layers/background.yml
+#   - !!inc/file layers/ls-bndl.yml
+   # add any layer if needed
