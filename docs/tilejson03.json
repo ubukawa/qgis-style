@@ -1,0 +1,35 @@
+{
+    "tilejson": "3.0.0",
+    "name": "NaturalEarth",
+    "attribution": "NaturalEarth",
+    "schema": "xyz",
+    "tiles": ["https://ubukawa.github.io/vt-test/ne-test/{z}/{x}/{y}.pbf"],
+    "maxzoom": 5,
+    "minzoom": 0,
+    "bounds": [-180, -85, 180, 85],
+    "vector_layers":[
+        {
+        "id": "Populated Places_SYMBOLS",
+        "description": "Capitals",
+        "fields":{
+            "_symbol": "the type of symbol"
+                 }
+        },
+        {
+        "id": "landmass",
+        "description": "Land polygon"
+        },
+        {
+        "id": "bndl",
+        "description": "Boundary line"
+        },
+        {
+        "id": "popp",
+        "description": "Population point"
+        },
+        {
+        "id": "coastl",
+        "description": "Coastline"
+        }
+    ]
+}

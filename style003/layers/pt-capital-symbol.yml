@@ -1,0 +1,27 @@
+#filter:
+id: pt-capital-symbol
+minzoom: 4
+maxzoom: 5
+layout:
+  #icon-allow-overlap: true
+  icon-image: PPL_National
+  icon-size: 1
+  #text-allow-overlap: true
+  #text-optional: true
+  #text-field: '{text_field}' #or [get, text_field] would be good.
+  #text-font: 
+  #- NotoSans-Regular #text font should be from glyphs
+  #text-size: 10
+  #text-anchor: bottom
+  #text-offset:
+  # - 1
+  # - 1
+  #text-letter-spacing: 0.1
+  #text-max-width: 50
+#paint:
+  #text-color: '#000000'
+  #text-halo-color: '#FFFFFF'
+  #text-halo-width: 1
+source: cme
+source-layer: Populated Places_SYMBOLS
+type: symbol

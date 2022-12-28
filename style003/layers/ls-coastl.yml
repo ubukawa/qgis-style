@@ -1,0 +1,27 @@
+#filter:
+#- match
+#- - get
+#  - bdytyp
+#- 0
+#- true 
+#- false
+id: ls-coastl
+minzoom: 4
+maxzoom: 6
+paint:
+  line-color: '#FF00FF'
+#  line-color: rgb(0,100,100)
+#  line-color: rgba(0,100,100,0.7)
+#  line-color: blue
+  line-width: 1
+  #line-opacity: 0.5
+  #line-dasharray:  #match cannot be used for dasharray in MapLibre
+  #  - 5
+  #  - 4
+  #  - 3
+#layout:
+#  line-cap: round
+#  line-join: round
+source: cme
+source-layer: Coastline_L05-L06
+type: line

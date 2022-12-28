@@ -1,0 +1,19 @@
+version: 8
+sprite: https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S
+glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
+sources:
+  ne: #change the name if needed
+    type: vector
+    attribtuion: NaturalEarth   #add if needed
+    minzoom: 0 #add if needed
+    maxzoom: 5 #add if needed
+    url: https://ubukawa.github.io/qgis-style/tilejson03.json
+#    tiles:
+#    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
+layers:
+   - !!inc/file layers/background.yml
+#   - !!inc/file layers/pg-land.yml
+#   - !!inc/file layers/ls-coastl.yml
+#   - !!inc/file layers/pt-capital-symbol.yml
+#   - !!inc/file layers/pt-capital-label.yml
+   # add any layer if needed
