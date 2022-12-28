@@ -3,14 +3,15 @@ id: pt-capital-label
 minzoom: 4
 maxzoom: 6
 layout:
-  icon-allow-overlap: true
-  icon-image: PPL_National
-  icon-size: 1
+#  icon-allow-overlap: true
+#  icon-image: PPL_National
+#  icon-size: 1
   text-allow-overlap: true
   text-optional: true
   text-field: '{_name}' #or [get, text_field] would be good.
   text-font: 
-  - Open Sans Condensed #text font should be from glyphs
+#  - NotoSans-Regular #text font should be from glyphs
+  - Open Sans Condensed
   text-size: 10
   text-anchor: bottom
   text-offset:

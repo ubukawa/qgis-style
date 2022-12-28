@@ -1,12 +1,14 @@
 {
   "version": 8,
+  "sprite": "https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S",
+  "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
   "sources": {
-    "carto": {
+    "cme": {
       "type": "vector",
-      "attribtuion": "Cartotile - test data",
+      "attribtuion": "UN_CLEARMAP_VT(powered by esri)",
       "minzoom": 0,
-      "maxzoom": 2,
-      "url": "https://ubukawa.github.io/qgis-style/tilejson01.json"
+      "maxzoom": 5,
+      "url": "https://ubukawa.github.io/qgis-style/tilejson02.json"
     }
   },
   "layers": [
@@ -18,26 +20,24 @@
       }
     },
     {
-      "id": "ls-bndl",
-      "minzoom": 0,
-      "maxzoom": 5,
+      "id": "pg-land",
       "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "bdytyp"
-          ],
-          0,
-          "#FF0000",
-          1,
-          "#00FF00",
-          "#FF00FF"
-        ],
+        "fill-color": "#888888"
+      },
+      "source": "cme",
+      "source-layer": "BNDA_L01-L04",
+      "type": "fill"
+    },
+    {
+      "id": "ls-coastl",
+      "minzoom": 4,
+      "maxzoom": 6,
+      "paint": {
+        "line-color": "#FF00FF",
         "line-width": 1
       },
-      "source": "carto",
-      "source-layer": "bndl",
+      "source": "cme",
+      "source-layer": "Coastline_L05-L06",
       "type": "line"
     }
   ]

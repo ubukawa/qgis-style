@@ -1,12 +1,14 @@
 {
   "version": 8,
+  "sprite": "https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S",
+  "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
   "sources": {
-    "carto": {
+    "cme": {
       "type": "vector",
-      "attribtuion": "Cartotile - test data",
+      "attribtuion": "UN_CLEARMAP_VT(powered by esri)",
       "minzoom": 0,
-      "maxzoom": 2,
-      "url": "https://ubukawa.github.io/qgis-style/tilejson01.json"
+      "maxzoom": 5,
+      "url": "https://ubukawa.github.io/qgis-style/tilejson02.json"
     }
   },
   "layers": [
@@ -18,27 +20,57 @@
       }
     },
     {
-      "id": "ls-bndl",
-      "minzoom": 0,
-      "maxzoom": 5,
+      "id": "pg-land",
       "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "bdytyp"
-          ],
-          0,
-          "#FF0000",
-          1,
-          "#00FF00",
-          "#FF00FF"
-        ],
+        "fill-color": "#888888"
+      },
+      "source": "cme",
+      "source-layer": "BNDA_L01-L04",
+      "type": "fill"
+    },
+    {
+      "id": "ls-coastl",
+      "minzoom": 4,
+      "maxzoom": 6,
+      "paint": {
+        "line-color": "#FF00FF",
         "line-width": 1
       },
-      "source": "carto",
-      "source-layer": "bndl",
+      "source": "cme",
+      "source-layer": "Coastline_L05-L06",
       "type": "line"
+    },
+    {
+      "id": "pt-capital-label",
+      "minzoom": 4,
+      "maxzoom": 6,
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": "PPL_National",
+        "icon-size": 1,
+        "text-allow-overlap": true,
+        "text-optional": true,
+        "text-field": "{_name}",
+        "text-font": [
+          "Open Sans Condensed"
+        ],
+        "text-size": 10,
+        "text-anchor": "bottom",
+        "text-offset": [
+          1,
+          1
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 50
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      },
+      "source": "cme",
+      "source-layer": "POPP_CTY_ANNO_L05_POINT",
+      "type": "symbol"
     }
   ]
 }

@@ -3,10 +3,10 @@ id: pg-land
 #minzoom: 0
 #maxzoom: 5
 paint:
-  fill-color: '#555500'
+  fill-color: '#999999'
   #fill-opacity: 0.5
   #fill-out-color: '#000000'
   #fill-pattern: (pattern from sprite)
-source: cme
-source-layer: BNDA_L01-L04
+source: ne
+source-layer: landmass
 type: fill

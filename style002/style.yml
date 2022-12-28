@@ -15,5 +15,5 @@ layers:
    - !!inc/file layers/pg-land.yml
    - !!inc/file layers/ls-coastl.yml
 #   - !!inc/file layers/pt-capital-symbol.yml
-#   - !!inc/file layers/pt-capital-label.yml
+   - !!inc/file layers/pt-capital-label.yml
    # add any layer if needed

@@ -3,7 +3,7 @@ id: pg-land
 #minzoom: 0
 #maxzoom: 5
 paint:
-  fill-color: '#555500'
+  fill-color: '#888888'
   #fill-opacity: 0.5
   #fill-out-color: '#000000'
   #fill-pattern: (pattern from sprite)
