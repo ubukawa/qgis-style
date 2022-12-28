@@ -1,7 +1,6 @@
 # qgis-style
 testing styles for QGIS
 
-
 # tilejson
 * https://ubukawa.github.io/qgis-style/tilejson01.json
 
