@@ -1,0 +1,45 @@
+{
+  "version": 8,
+  "sources": {
+    "carto": {
+      "type": "vector",
+      "attribtuion": "Cartotile - test data",
+      "minzoom": 0,
+      "maxzoom": 2,
+      "url": "https://ubukawa.github.io/qgis-style/tilejson01.json"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#D6EBF5"
+      }
+    },
+    {
+      "id": "ls-bndl",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "paint": {
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#0000FF",
+          1,
+          "#00FF00",
+          2,
+          "#FF0000",
+          3,
+          "#FFFFFF"
+        ],
+        "line-width": 1
+      },
+      "source": "carto",
+      "source-layer": "bndl",
+      "type": "line"
+    }
+  ]
+}
