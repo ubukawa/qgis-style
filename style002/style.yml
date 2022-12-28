@@ -1,6 +1,6 @@
 version: 8
 sprite: https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S
-glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
+#glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
 sources:
   cme: #change the name if needed
     type: vector
@@ -12,5 +12,6 @@ sources:
 #    - https://ubukawa.github.io/cartotile/tile/{z}/{x}/{y}.pbf
 layers:
    - !!inc/file layers/background.yml
-#   - !!inc/file layers/ls-bndl.yml
+   - !!inc/file layers/ls-coastl.yml
+   - !!inc/file layers/pt-capital-symbol.yml
    # add any layer if needed

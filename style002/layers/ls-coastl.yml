@@ -5,19 +5,11 @@
 #- 0
 #- true 
 #- false
-id: ls-bndl
-minzoom: 0
-maxzoom: 5
+id: ls-coastl
+minzoom: 4
+maxzoom: 6
 paint:
-  line-color: #'#FF0000'
-  - match
-  - - get
-    - bdytyp
-  - 0
-  - '#FF0000'
-  - 1
-  - '#00FF00'
-  - '#FF00FF'
+  line-color: '#FF00FF'
 #  line-color: rgb(0,100,100)
 #  line-color: rgba(0,100,100,0.7)
 #  line-color: blue
@@ -30,6 +22,6 @@ paint:
 #layout:
 #  line-cap: round
 #  line-join: round
-source: carto
-source-layer: bndl 
+source: cme
+source-layer: Coastline_L05-L06
 type: line
