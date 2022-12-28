@@ -7,6 +7,5 @@ testing styles for QGIS
 
 # styles
 * Example: https://ubukawa.github.io/qgis-style/style01.json
-  * style01: only background (index color)
-  * style02: only background (rgb color)
-  * style03:
+  * From style01.json to style1X.json refer to the tilejson01.json
+
