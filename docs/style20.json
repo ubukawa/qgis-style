@@ -52,7 +52,7 @@
         "text-optional": true,
         "text-field": "{_name}",
         "text-font": [
-          "Open Sans Condensed"
+          "Arial"
         ],
         "text-size": 10,
         "text-anchor": "bottom",
