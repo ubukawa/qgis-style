@@ -22,6 +22,6 @@ layout:
   #text-color: '#000000'
   #text-halo-color: '#FFFFFF'
   #text-halo-width: 1
-source: cme
-source-layer: Populated Places_SYMBOLS
+source: ne
+source-layer: popp
 type: symbol

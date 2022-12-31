@@ -8,9 +8,10 @@ layout:
   icon-size: 1
   text-allow-overlap: true
   text-optional: true
-  text-field: '{_name}' #or [get, text_field] would be good.
+  text-field: '{NAME}' #or [get, text_field] would be good.
   text-font: 
-  - Open Sans Condensed #text font should be from glyphs
+#  - NotoSans-Regular
+  - Arial #text font should be from glyphs
   text-size: 10
   text-anchor: bottom
   text-offset:
@@ -22,6 +23,6 @@ paint:
   text-color: '#000000'
   text-halo-color: '#FFFFFF'
   text-halo-width: 1
-source: cme
-source-layer: POPP_CTY_ANNO_L05_POINT
+source: ne
+source-layer: popp
 type: symbol

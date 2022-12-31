@@ -1,0 +1,76 @@
+{
+  "version": 8,
+  "sprite": "https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S",
+  "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
+  "sources": {
+    "ne": {
+      "type": "vector",
+      "attribtuion": "NaturalEarth",
+      "minzoom": 0,
+      "maxzoom": 5,
+      "url": "https://ubukawa.github.io/qgis-style/tilejson03.json"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#D6EBF5"
+      }
+    },
+    {
+      "id": "pg-land",
+      "paint": {
+        "fill-color": "#999999"
+      },
+      "source": "ne",
+      "source-layer": "landmass",
+      "type": "fill"
+    },
+    {
+      "id": "ls-coastl",
+      "minzoom": 0,
+      "maxzoom": 6,
+      "paint": {
+        "line-color": "#0000FF",
+        "line-width": 1.5
+      },
+      "source": "ne",
+      "source-layer": "coastl",
+      "type": "line"
+    },
+    {
+      "id": "pt-capital-label",
+      "minzoom": 4,
+      "maxzoom": 6,
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": "PPL_National",
+        "icon-size": 1,
+        "text-allow-overlap": true,
+        "text-optional": true,
+        "text-field": "{NAME}",
+        "text-font": [
+          "NotoSans-Regular"
+        ],
+        "text-size": 10,
+        "text-anchor": "bottom",
+        "text-offset": [
+          1,
+          1
+        ],
+        "text-letter-spacing": 0.1,
+        "text-max-width": 50
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1
+      },
+      "source": "ne",
+      "source-layer": "popp",
+      "type": "symbol"
+    }
+  ]
+}
